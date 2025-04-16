@@ -1,58 +1,75 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "The Home I Yearn",
+    "Credits": "Created by Reece Talaro (rtalaro@ucsc.edu).",
+    "InitialLocation": "Class",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Class": {
+            "Body": "A bus passes me by. I'm reminded that home is just a short two hours away. What's stopping me from leaving?",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Wait at the bus stop",
+                    "Target": "Transit Station"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Walk to the dorm",
+                    "Target": "Dorm (fail)"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Transit Station": {
+            "Body": "I made it to the transit station, but should I really go? I didn't pack anything, or even tell anyone.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Bus to Capitola",
+                    "Target": "Capitola"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Bus to San Jose",
+                    "Target": "San Jose"
+                },
+                {
+                    "Text": "Bus to campus",
+                    "Target": "Dorm (fail)"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Capitola": {
+            "Body": "Just a day out is good enough.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Back to the dorm",
+                    "Target": "Dorm (succeed)"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Check into a hotel",
+                    "Target": "Hotel"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "San Jose": {
+            "Body": "Even this short vacation will be good enough.",
+            "Choices": [
+                {
+                    "Text": "Back to the dorm",
+                    "Target": "Dorm (succeed)"
+                },
+                {
+                    "Text": "Take the train to Hercules",
+                    "Target": "Hercules"
+                }
+            ]
+        },
+        "Hercules": {
+            "Body": "Home, at last."
+        },
+        "Dorm (fail)": {
+            "Body": "Well, maybe another day."
+        },
+        "Dorm (succeed)": {
+            "Body": "That was fun, even if it was just a short while."
+        },
+        "Hotel": {
+            "Body": "Let's just go back tomorrow."
         }
     }
 }
