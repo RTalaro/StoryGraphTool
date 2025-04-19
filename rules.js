@@ -22,6 +22,13 @@ class Location extends Scene {
         } else {
             this.engine.addChoice("The end.")
         }
+        if(key == "Playroom"){
+            this.engine.storyData["Capo"] = true;
+            this.engine.storyData["Locations"]["Bedroom"]["Body"] = "My bedroom, the place closest to my heart. My whole life lies within these walls. Now I can play my guitar.";
+            this.engine.storyData["Locations"]["Bedroom"]["Choices"].push({"Text":"Play the guitar","Target":"Play Guitar"});
+            //console.log(this.engine.storyData["Capo"]);
+            //console.log(this.engine.storyData["Locations"]["Choices"]);
+        }
     }
 
     handleChoice(choice) {

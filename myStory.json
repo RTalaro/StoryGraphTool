@@ -1,75 +1,121 @@
 {
-    "Title": "The Home I Yearn",
+    "Title": "Home Sweet Hercules",
     "Credits": "Created by Reece Talaro (rtalaro@ucsc.edu).",
-    "InitialLocation": "Class",
+    "InitialLocation": "Bedroom",
+    "Capo": false,
     "Locations": {
-        "Class": {
-            "Body": "A bus passes me by. I'm reminded that home is just a short two hours away. What's stopping me from leaving?",
+        "Bedroom": {
+            "Body": "My bedroom, the place closest to my heart. My whole life lies within these walls.",
             "Choices": [
                 {
-                    "Text": "Wait at the bus stop",
-                    "Target": "Transit Station"
+                    "Text": "In the middle desk drawer",
+                    "Target": "Middle Desk Drawer"
                 },
                 {
-                    "Text": "Walk to the dorm",
-                    "Target": "Dorm (fail)"
+                    "Text": "Into the hallway",
+                    "Target": "Upstairs"
+                }
+            ]   
+        },
+        "Play Guitar": {
+            "Body": "I feel more relaxed now.",
+            "Choices": [
+                {
+                    "Text": "In the middle desk drawer",
+                    "Target": "Middle Desk Drawer"
+                },
+                {
+                    "Text": "Into the hallway",
+                    "Target": "Upstairs"
+                }
+            ]   
+        },
+        "Middle Desk Drawer": {
+            "Body": "Cluttered with stickers, earrings, thread, pencil sharpeners, unused blank playing cards, and other knick knacks.",
+            "Choices": [
+                {
+                    "Text": "Return",
+                    "Target": "Bedroom"
                 }
             ]
         },
-        "Transit Station": {
-            "Body": "I made it to the transit station, but should I really go? I didn't pack anything, or even tell anyone.",
+        "Upstairs": {
+            "Body": "One time, my dad was ironing some clothes and set down the iron next to me. I placed the iron on my left foot; the scar remains to this day.",
             "Choices": [
                 {
-                    "Text": "Bus to Capitola",
-                    "Target": "Capitola"
+                    "Text": "Into my bedroom",
+                    "Target": "Bedroom"
                 },
                 {
-                    "Text": "Bus to San Jose",
-                    "Target": "San Jose"
+                    "Text": "Into the laundry room",
+                    "Target": "Laundry Room"
                 },
                 {
-                    "Text": "Bus to campus",
-                    "Target": "Dorm (fail)"
+                    "Text": "Go downstairs",
+                    "Target": "Downstairs"
                 }
             ]
         },
-        "Capitola": {
-            "Body": "Just a day out is good enough.",
+        "Laundry Room": {
+            "Body": "Every time I come home, the laundry has piled up so high I can do about three loads. Good thing Dad always called me to help him do laundry.",
             "Choices": [
                 {
-                    "Text": "Back to the dorm",
-                    "Target": "Dorm (succeed)"
-                },
-                {
-                    "Text": "Check into a hotel",
-                    "Target": "Hotel"
+                    "Text": "Into the hallway",
+                    "Target": "Upstairs"
                 }
             ]
         },
-        "San Jose": {
-            "Body": "Even this short vacation will be good enough.",
+        "Downstairs": {
+            "Body": "We used to have a hopscotch mat. The butterfly pattern on the step which read \"3\" was my favorite. At that moment, 3 became my favorite number.",
             "Choices": [
                 {
-                    "Text": "Back to the dorm",
-                    "Target": "Dorm (succeed)"
+                    "Text": "Go upstairs",
+                    "Target": "Upstairs"
                 },
                 {
-                    "Text": "Take the train to Hercules",
-                    "Target": "Hercules"
+                    "Text": "Go to the playroom",
+                    "Target": "Playroom"
+                },
+                {
+                    "Text": "Go to the family room",
+                    "Target": "Family Room"
                 }
             ]
         },
-        "Hercules": {
-            "Body": "Home, at last."
+        "Playroom": {
+            "Body": "I played a lot of Just Dance with friends in here. Oh, there's my capo.",
+            "Choices": [
+                {
+                    "Text": "Go upstairs",
+                    "Target": "Upstairs"
+                },
+                {
+                    "Text": "Go to the family room",
+                    "Target": "Family Room"
+                }
+            ]
         },
-        "Dorm (fail)": {
-            "Body": "Well, maybe another day."
+        "Family Room": {
+            "Body": "It's changed immensely ever since Dad moved out. I remember our old bar stools, varying in shapes and size.",
+            "Choices": [
+                {
+                    "Text": "Go to the backyard",
+                    "Target": "Backyard"
+                },
+                {
+                    "Text": "Go to the hallway",
+                    "Target": "Downstairs"
+                }
+            ]
         },
-        "Dorm (succeed)": {
-            "Body": "That was fun, even if it was just a short while."
-        },
-        "Hotel": {
-            "Body": "Let's just go back tomorrow."
+        "Backyard": {
+            "Body": "Grandpa planted a rose bush in our yard before he passed away. Mom got it cut down because she thought it looked too messy.",
+            "Choices": [
+                {
+                    "Text": "Go inside",
+                    "Target": "Family Room"
+                }
+            ]
         }
     }
 }
